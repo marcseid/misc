@@ -76,12 +76,12 @@ public class Klasseneinteilung implements Runnable {
 	public static String[][] namesToNumbers(String[][] input) {
 		String[][] workCopy = input;
 		// int[][] twoDNumberArray = new int[input.length][input[0].length];
-		for (int i = 0; i < input.length; i++) {
+		for (int i = 0; i < workCopy.length; i++) {
 			String toTest = input[i][0];
+			int j = 0;
 			for (String[] s: workCopy) {
-				int j = 0;
-			    for (String testString: s) {
-			    	int k = 0;
+				int k = 0;
+				for (String testString: s) {
 			        if (testString.equals(toTest)) {
 			        	workCopy[j][k] = Integer.toString(j); 
 			        }
