@@ -47,7 +47,7 @@ public class Klasseneinteilung implements Runnable {
     }
 
     private void score() {
-        for (int i = 0; i < zahlen.length; i++) {
+        for (int i = 0; i < (zahlen.length - 2); i++) {
             for (int j = 0; j < wuensche.length; j++) {
                 if (zahlen[i] == wuensche[j][0]) {
                     berechneScore(zahlen[i], zahlen, wuensche[j]);
